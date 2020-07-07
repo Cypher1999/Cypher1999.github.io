@@ -26,6 +26,7 @@ body{
     background-attachment: fixed;
     background-size:cover;
     background-repeat: no-repeat;
+    background-position:top center ;
    
 }
 
@@ -37,6 +38,8 @@ body{
     position: relative;
     width: 100%;
     height: 100%;
+    max-width: 1600px;
+    
 }
 
 /***********************/
@@ -49,6 +52,7 @@ header{
     margin-top: 0;
     text-align: left;
     flex: 1;
+    box-sizing: border-box;
 }
 
 ul.menu{
@@ -61,7 +65,7 @@ ul.menu{
 ul.menu li{
     
     display: inline;
-    padding: 35px;
+    padding: 1%;
     
 }
 
@@ -70,7 +74,7 @@ ul.menu li a{
     text-decoration: none;
     color: white;
     font-family: var(--letter);
-    font-size: 17px;
+    font-size: 16px;
     padding: 0;
 }
 
@@ -79,6 +83,7 @@ ul.menu li a{
     margin:2%;
     margin-top: 20px;
     border: white 1px solid;
+    
 }
 
 /***********************/
@@ -87,11 +92,11 @@ ul.menu li a{
 
 .principal{
 
+    box-sizing: border-box;
     margin-top: 8%;
     border: 2px white solid;
     padding: 1%;
-    margin-left: 20%;
-    margin-right: 20%;
+    width: 70%;
     background-color: var(--back-dark);
     
 }
@@ -102,8 +107,7 @@ ul.menu li a{
     font-family: var(--title);
     font-size: 100px;
     margin-bottom: -1%;
-    min-width: 250px;
-
+    
 }
 
 .principal p.subtitulo{
@@ -123,7 +127,7 @@ ul.menu li a{
     text-decoration: none;
     color: white;
     font-family: var(--letter);
-    font-size: 17px;
+    font-size:17px;
     border: white 2px solid;
     padding: 15px;
     background-color: var(--back-dark);
@@ -134,7 +138,6 @@ ul.menu li a{
     background-color: var(--back-light);
     color:var(--back-dark) ;
 }
-
 
 
 /***********************/
@@ -157,4 +160,58 @@ footer p{
     font-family: Arial;
     font-size: 14px;
     color: white;
+    
+}
+
+@media screen and (max-width:400px){
+
+    .principal{
+
+        width: 90%;
+        margin-top: 45%;
+    }
+
+    .principal p.titulo{
+
+        margin-top: 0%;
+        font-family: var(--title);
+        font-size: calc(2em + 2vw);
+        margin-bottom: -1%;
+        
+    }
+
+    .principal p.subtitulo{
+
+        font-family: var(--letter);
+        font-size: calc(1em + 1vw);
+    }
+
+    .boton-clase{
+
+        margin-top: 15%;
+        text-align: center;
+        
+    }
+    .boton-clase a{
+
+        font-size: calc(1em + 1vw);
+        
+    }
+
+    header nav ul.menu {
+        left: 0;
+        margin-left: 0;
+    }
+
+    header nav ul.menu li{
+
+        margin: 0;
+        padding: 0.5%;
+    }
+
+    header nav ul.menu li a{
+
+        margin: 0;
+        font-size:13px;
+    }
 }
