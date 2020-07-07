@@ -163,12 +163,16 @@ footer p{
     
 }
 
+/***********************/
+/*        MOVIL        */
+/***********************/
+
 @media screen and (max-width:400px){
 
     .principal{
 
         width: 90%;
-        margin-top: 45%;
+        margin-top: 30%;
     }
 
     .principal p.titulo{
