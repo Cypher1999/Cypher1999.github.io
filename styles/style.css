@@ -7,8 +7,9 @@
 
     /*FUENTES*/
 
-    --title: 'Abril Fatface', cursive;
+    --maybe: 'Abril Fatface', cursive;
     --letter:'Merriweather', serif;
+    --title:'Ubuntu', sans-serif; ;
 
 }
 
@@ -40,7 +41,7 @@ body{
     height: 100%;
     max-width: 1600px;
     
-}
+}   
 
 /***********************/
 /*       HEADER        */
@@ -83,7 +84,7 @@ ul.menu li a{
     margin:2%;
     margin-top: 20px;
     border: white 1px solid;
-    
+
 }
 
 /***********************/
@@ -95,7 +96,7 @@ ul.menu li a{
     box-sizing: border-box;
     margin-top: 8%;
     border: 2px white solid;
-    padding: 1%;
+    padding: 2%;
     width: 70%;
     background-color: var(--back-dark);
     
@@ -105,7 +106,7 @@ ul.menu li a{
 
     margin-top: 0%;
     font-family: var(--title);
-    font-size: 100px;
+    font-size: 85px;
     margin-bottom: -1%;
     
 }
@@ -172,14 +173,15 @@ footer p{
     .principal{
 
         width: 90%;
-        margin-top: 30%;
+        margin-top: 20%;
+        
     }
 
     .principal p.titulo{
 
-        margin-top: 0%;
+        margin-top: 2%;
         font-family: var(--title);
-        font-size: calc(2em + 2vw);
+        font-size: calc(1.5em + 2vw);
         margin-bottom: -1%;
         
     }
@@ -210,12 +212,78 @@ footer p{
     header nav ul.menu li{
 
         margin: 0;
-        padding: 0.5%;
+        padding:2%;
     }
 
     header nav ul.menu li a{
 
         margin: 0;
-        font-size:13px;
+        font-size:12px;
     }
+
+    footer{
+        position: absolute;
+    }
+}
+
+
+@media screen and (max-width:800px){
+
+    .principal{
+
+        width: 90%;
+        margin-top: 20%;
+        
+    }
+
+    .principal p.titulo{
+
+        margin-top: 2%;
+        font-family: var(--title);
+        font-size: calc(1.5em + 2vw);
+        margin-bottom: -1%;
+        
+    }
+
+    .principal p.subtitulo{
+
+        font-family: var(--letter);
+        font-size: calc(1em + 1vw);
+    }
+
+    .boton-clase{
+
+        margin-top: 15%;
+        text-align: center;
+        
+    }
+    .boton-clase a{
+
+        font-size: calc(1em + 1vw);
+        
+    }
+
+    header nav ul.menu {
+        left: 0;
+        margin-left: 0;
+    }
+
+    header nav ul.menu li{
+
+        margin: 0;
+        padding:2%;
+    }
+
+    header nav ul.menu li a{
+
+        margin: 0;
+        font-size:12px;
+    }
+
+
+    footer{
+
+        display: none;
+    }
+
 }
