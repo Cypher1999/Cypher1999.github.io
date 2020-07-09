@@ -121,13 +121,18 @@ ul.menu li a{
 .indice-unidades{
 
     width: 100%;
+    box-sizing: border-box;
+    margin-top: 5%;
     
 }
 
 .indice-unidades h1{
-    margin-top: 5%;
+    margin-top: 2.5%;
     font-family: var(--title);
-    font-size: 40px;
+    font-size: 50px;
+    border-bottom: white 3px solid;
+    width: 40%;
+    padding: 1%;
 }
 
 .indice-unidades ul.menu-unidades{
@@ -138,22 +143,38 @@ ul.menu li a{
     
 }
 
+ul.menu-unidades li{
+
+    padding: 0.75%;
+}
+
 ul.menu-unidades li a{
 
     background: var(--back-dark);
     display: block;
-    font-size: 17px;
+    font-size: 20px;
     text-decoration: none;
     font-family: var(--letter);
     color: white;
-    padding: 1%;
-    width: 100%;
-    
+    padding: 1.2%;
+    width: 80%;
+    border:white 1px solid;
+    box-sizing: border-box;
+    -webkit-transition: all 450ms ease;
+    -moz-transition: all 450ms ease;
+    -ms-transition: all 450ms ease;
+    -o-transition: all 450ms ease;
+    transition: all 450ms ease;
 }
 
 ul.menu-unidades li a:hover{
     background: var(--back-light);
     color: var(--back-dark);
+    -webkit-transition: all 450ms ease;
+    -moz-transition: all 450ms ease;
+    -ms-transition: all 450ms ease;
+    -o-transition: all 450ms ease;
+    transition: all 450ms ease;
 }
 
 /***********************/
@@ -201,14 +222,33 @@ ul.menu-unidades li a:hover{
         font-size: calc(2em + 2vw);
     }
 
-
     .principal-intro .texto-intro{
         margin: 0;
         text-align: center;
-        margin-top: 6%;
+        margin-top: 10%;
         font-size: 12px;
         
     }
- 
+
+    .indice-unidades h1{
+
+        width: 100%;
+        margin-top: 10%;
+        font-size: 40px;
+        padding: 2%;
+    }
+
+    ul.menu-unidades{
+
+        margin-top: 0;   
+             
+    }
+
+    ul.menu-unidades li a{
+
+        box-sizing: border-box;
+        padding: 3%;
+        width: 100%;
+    }
 }
 

@@ -131,12 +131,22 @@ ul.menu li a{
     border: white 2px solid;
     padding: 15px;
     background-color: var(--back-dark);
+    -webkit-transition: all 450ms ease;
+    -moz-transition: all 450ms ease;
+    -ms-transition: all 450ms ease;
+    -o-transition: all 450ms ease;
+    transition: all 450ms ease;
 }
 
 .boton-clase a:hover{
 
     background-color: var(--back-light);
     color:var(--back-dark) ;
+    -webkit-transition: all 450ms ease;
+    -moz-transition: all 450ms ease;
+    -ms-transition: all 450ms ease;
+    -o-transition: all 450ms ease;
+    transition: all 450ms ease;
 }
 
 
