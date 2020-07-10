@@ -93,9 +93,9 @@ ul.menu li a{
 .principal{
 
     box-sizing: border-box;
-    margin-top: 8%;
+    margin-top: 5%;
     border: 2px white solid;
-    padding: 2%;
+    padding: 3.5%;
     width: 70%;
     background-color: var(--back-dark);
     
@@ -105,15 +105,15 @@ ul.menu li a{
 
     margin-top: 0%;
     font-family: var(--title);
-    font-size: 85px;
+    font-size: 60px;
     margin-bottom: -1%;
-    
+    box-sizing: border-box;
 }
 
 .principal p.subtitulo{
 
     font-family: var(--letter);
-    font-size: 30px;
+    font-size: 37px;
 }
 
 .boton-clase{
@@ -127,7 +127,7 @@ ul.menu li a{
     text-decoration: none;
     color: white;
     font-family: var(--letter);
-    font-size:17px;
+    font-size:20px;
     border: white 2px solid;
     padding: 15px;
     background-color: var(--back-dark);
@@ -242,7 +242,7 @@ footer p{
 
         width: 90%;
         margin-top: 20%;
-        
+        padding: 5%;
     }
 
     .principal p.titulo{
