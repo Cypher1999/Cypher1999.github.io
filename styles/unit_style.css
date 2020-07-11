@@ -172,4 +172,10 @@ ul.menu li a{
 
         font-size: calc(1em + 1vw);
     }
+
+    .principal-unit .pdf-unit iframe{
+
+        width: 80%;
+        height: 200px;
+    }
 }
