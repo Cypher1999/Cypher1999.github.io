@@ -1,0 +1,175 @@
+:root{
+
+    /*COLORES*/
+
+    --back-dark:rgba(26, 21, 21, 0.712);
+    --back-light:rgba(255, 255, 255, 0.774);
+
+    /*FUENTES*/
+
+    --letter:'Merriweather', serif;
+    --title:'Ubuntu', sans-serif; ;
+}
+
+html{
+
+    scroll-behavior: smooth;
+}
+
+body{
+
+    background: linear-gradient(rgba(22, 18, 18, 0.733),rgba(15, 14, 14, 0.637)),
+    url("../img/Backgrounds/intro.jpg");
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:top center ;
+   
+}
+
+.container {
+
+    color:white;
+    z-index: 60;
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}   
+
+/***********************/
+/*       HEADER        */
+/***********************/
+
+header{
+
+    width: 100%;
+    margin-top: 0;
+    text-align: left;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+ul.menu{
+
+    margin-top: 0.75cm;
+    list-style: none;
+    
+}
+
+ul.menu li{
+    
+    display: inline;
+    padding: 1%;
+    
+}
+
+ul.menu li a{
+   
+    text-decoration: none;
+    color: white;
+    font-family: var(--letter);
+    font-size: 16px;
+    padding: 0;
+}
+
+.container hr{
+
+    margin:2%;
+    margin-top: 20px;
+    border: white 1px solid;
+}
+
+/***********************/
+/*   BODY PRINCIPAL    */
+/***********************/
+
+.principal-unit{
+
+    margin-bottom: 0.5%;
+}
+
+.principal-unit .unit-title{
+
+    margin-top: 3%;
+    box-sizing: border-box;
+    border: white 1px solid;
+    width: 60%;
+    background-color: var(--back-dark);
+}
+
+.principal-unit .unit-title h1{
+
+    font-size: 55px;
+    font-family: var(--title);
+}
+
+.principal-unit .pdf-unit{
+
+    margin-top: 3%;
+    width: 60%;
+    border: white 1px solid;
+    background: var(--back-dark);
+    box-sizing: border-box;
+  
+}
+
+.principal-unit .pdf-unit h1{
+
+    font-family: var(--title);
+    font-size: 45px;
+} 
+
+.principal-unit .pdf-unit ul{
+
+    padding: 0;
+    list-style: none;
+    margin-bottom: 5%;
+}
+
+.principal-unit .pdf-unit ul li{
+
+    padding: 1%;
+}
+
+.principal-unit .pdf-unit ul li a{
+    
+    color: white;
+    font-size: 25px;
+    font-family: var(--letter);
+}
+
+/***********************/
+/*        MOVIL        */
+/***********************/
+
+@media screen and (max-width:800px){
+
+    .principal-unit .unit-title{
+
+        margin-top: 8%;
+        width: 90%;
+    }
+
+    .principal-unit .pdf-unit h1{
+
+        font-family: var(--title);
+        font-size: calc(1.5em + 1.5vw);
+    } 
+
+    .principal-unit .pdf-unit{
+
+        margin-top: 5%;
+        width: 90%;
+    }
+
+    .principal-unit .pdf-unit ul{
+
+        margin-bottom: 10%;
+    }
+
+    .principal-unit .pdf-unit ul li a{
+
+        font-size: calc(1em + 1vw);
+    }
+}
