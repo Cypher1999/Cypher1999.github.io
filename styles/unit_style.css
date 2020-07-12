@@ -1,12 +1,10 @@
 :root{
 
     /*COLORES*/
-
     --back-dark:rgba(26, 21, 21, 0.712);
     --back-light:rgba(255, 255, 255, 0.774);
 
     /*FUENTES*/
-
     --letter:'Merriweather', serif;
     --title:'Ubuntu', sans-serif; ;
 }
@@ -124,7 +122,7 @@ ul.menu li a{
 
     padding: 0;
     list-style: none;
-    margin-bottom: 5%;
+    
 }
 
 .principal-unit .pdf-unit ul li{
@@ -137,6 +135,42 @@ ul.menu li a{
     color: white;
     font-size: 25px;
     font-family: var(--letter);
+}
+
+.principal-unit .sig-unit{
+    
+    padding: 0;
+    margin: 0;
+    margin-top: 5%;
+    width: 60%;
+    box-sizing: border-box;
+    margin-bottom: 3%;
+}
+
+.principal-unit .sig-unit ul{ 
+
+    list-style: none;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+}
+
+.sig-unit li{
+
+    
+    padding: 3%;
+    
+    display: inline;
+   
+}
+
+.sig-unit ul li a{
+
+    color: white;
+    
+    font-size: 1.75em;
+    
 }
 
 /***********************/
@@ -178,4 +212,10 @@ ul.menu li a{
         width: 80%;
         height: 200px;
     }
+
+    .sig-unit ul li a{
+
+        font-size: 1.5em;
+    }
+
 }
