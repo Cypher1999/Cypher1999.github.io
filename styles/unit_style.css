@@ -213,6 +213,11 @@ ul.menu li a{
         height: 200px;
     }
 
+    .principal-unit .pdf-unit video{
+        width: 80%;
+        height: 200px;
+    }
+
     .sig-unit ul li a{
 
         font-size: 1.5em;
