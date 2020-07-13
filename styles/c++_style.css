@@ -1,0 +1,167 @@
+:root{
+
+    /*COLORES*/
+    --back-dark:rgba(26, 31, 37, 0.712);
+    --back-light:rgba(255, 255, 255, 0.774);
+
+    /*FUENTES*/
+    --letter:'Merriweather', serif;
+    --title:'Ubuntu', sans-serif; ;
+}
+
+html{
+
+    scroll-behavior: smooth;
+}
+
+body{
+
+    background: linear-gradient(rgba(45, 64, 71, 0.39),rgba(47, 61, 77, 0.568)) ,
+    url("../img/Backgrounds/desktop.jpg");
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:top center ;
+   
+}
+
+.container {
+
+    color:white;
+    z-index: 60;
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}   
+
+/***********************/
+/*       HEADER        */
+/***********************/
+
+header{
+
+    width: 100%;
+    margin-top: 0;
+    text-align: left;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+ul.menu{
+
+    margin-top: 0.75cm;
+    list-style: none;
+    
+}
+
+ul.menu li{
+    
+    display: inline;
+    padding: 1%;
+    
+}
+
+ul.menu li a{
+   
+    text-decoration: none;
+    color: white;
+    font-family: var(--letter);
+    font-size: 16px;
+    padding: 0;
+}
+
+.container hr{
+
+    margin:2%;
+    margin-top: 20px;
+    border: white 1px solid;
+}
+
+/***********************/
+/*   BODY PRINCIPAL    */
+/***********************/
+
+
+.principal_c{
+
+    width: 90%;
+    margin: 0;
+    padding: 0;
+}
+
+.principal_c .title_c{
+
+    box-sizing: border-box;
+    margin-top: 4% ;
+    border: white 2px solid;
+    width: 80%;
+    background-color: var(--back-dark);
+}
+.title_c h1{
+
+    margin-top: 2%;
+    padding: 0;
+    font-family: var(--title);
+    font-size: 7em; 
+    margin-bottom: -1px;  
+}
+
+.title_c p{
+
+    font-size: 1.7em;
+    font-family: var(--letter);
+    margin-bottom: 3%;
+}
+
+/***********************/
+/*        MOVIL        */
+/***********************/
+
+@media screen and (max-width:800px){
+
+ 
+    header nav ul.menu {
+        left: 0;
+        margin-left: 0;
+    }
+
+    header nav ul.menu li{
+
+        margin: 0;
+        padding:2%;
+    }
+
+    header nav ul.menu li a{
+
+        margin: 0;
+        font-size:12px;
+    }
+
+    .container{
+
+        width: 100%;
+        margin: 0;
+    }
+
+    .principal_c{
+        margin-top: 6%;        
+        width: 90%; 
+    }
+
+    .principal_c .title_c{
+
+        width: 100%;
+    }
+
+    .principal_c .title_c h1{
+
+        font-size: 4.8em;
+    }
+
+    .principal_c .title_c p{
+
+        font-size: 1.2em;
+        margin-bottom: 5%;
+    }
+}

@@ -113,7 +113,7 @@ ul.menu li a{
 .principal p.subtitulo{
 
     font-family: var(--letter);
-    font-size: 37px;
+    font-size: 2vw;
 }
 
 .boton-clase{
