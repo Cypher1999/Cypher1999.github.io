@@ -137,6 +137,20 @@ ul.menu li a{
     font-family: var(--letter);
 }
 
+.pdf-unit iframe{
+
+    box-sizing: border-box;
+    padding: 2%;
+    border: white 1px solid;
+}
+
+.pdf-unit video{
+
+    box-sizing: border-box;
+    padding: 2%;
+    border: white 1px solid;
+}
+
 .principal-unit .sig-unit{
     
     padding: 0;
@@ -155,6 +169,7 @@ ul.menu li a{
     width: 100%;
     margin: 0;
 }
+
 
 .sig-unit li{
 
@@ -209,12 +224,12 @@ ul.menu li a{
 
     .principal-unit .pdf-unit iframe{
 
-        width: 80%;
+        width: 90%;
         height: 200px;
     }
 
     .principal-unit .pdf-unit video{
-        width: 80%;
+        width: 90%;
         height: 200px;
     }
 

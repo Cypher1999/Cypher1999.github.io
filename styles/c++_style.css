@@ -172,6 +172,12 @@ ul.menu li a{
     border: 1px solid white;
 }
 
+.cbox_cont iframe{
+    box-sizing: border-box;
+    border: white 1px solid;
+    padding: 2%;
+}
+
 ul.sintax-links{
 
     margin: 0;
@@ -279,6 +285,7 @@ ul.sintax-links li a:hover{
         box-sizing: border-box;
         margin-top: 10%;
         padding: 5%;
+        text-align: center;
     }
 
     .cbox_cont p{
@@ -293,7 +300,17 @@ ul.sintax-links li a:hover{
     }
 
     .cbox_cont img{
+        
         height: 210px;
         width: 90%;
     }
+
+    .cbox_cont address{
+        text-align: left;
+    }
+    .cbox_cont iframe{
+        width: 90%;
+        height: 200px;
+    }
+    
 }
