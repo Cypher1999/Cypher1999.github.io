@@ -194,6 +194,29 @@ ul.menu li a{
 
 @media screen and (max-width:800px){
 
+    header nav ul.menu {
+        left: 0;
+        margin-left: 0;
+    }
+
+    header nav ul.menu li{
+
+        margin: 0;
+        padding:2%;
+    }
+
+    header nav ul.menu li a{
+
+        margin: 0;
+        font-size:12px;
+    }
+
+    .container{
+
+        width: 100%;
+        margin: 0;
+    }
+
     .principal-unit .unit-title{
 
         margin-top: 8%;
