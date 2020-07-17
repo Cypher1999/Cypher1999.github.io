@@ -5,6 +5,8 @@
     --back-dark:rgba(31, 21, 21, 0.63);
     --back-light:rgba(255, 255, 255, 0.774);
 
+    --border: white 1px solid;
+
     /*FUENTES*/
 
     --letter:'Merriweather', serif;
@@ -36,7 +38,7 @@ body{
     position: relative;
     width: 100%;
     height: 100%;
-
+    margin-bottom: 5%;
 }   
 
 /***********************/
@@ -87,7 +89,7 @@ ul.menu li a{
 /*   BODY PRINCIPAL    */
 /***********************/
 
-.principal-hist{
+.principal-recur{
 
     width: 90%;
     margin: 0;
@@ -95,7 +97,7 @@ ul.menu li a{
     box-sizing: border-box;
 }
 
-.principal-hist .title{
+.principal-recur .title{
 
     width: 70%;
     margin: 0;
@@ -105,7 +107,7 @@ ul.menu li a{
     
 }
 
-.principal-hist .title h1{
+.principal-recur .title h1{
     
     background-color: var(--back-dark);
     font-family: var(--title);
@@ -116,13 +118,13 @@ ul.menu li a{
     margin-bottom: -1px;
 }
 
-.principal-hist .title p{
+.principal-recur .title p{
 
     width: 100%;
     display: block;
     margin-top: 0;
     font-family: var(--letter);
-    font-size: 1.3em;
+    font-size: 1.2em;
     padding: 2%;
     border: white 1px solid;
     background: var(--back-dark);
@@ -130,14 +132,14 @@ ul.menu li a{
     margin-top: 3%;
 }
 
-.principal-hist .menu-historia{
+.principal-recur .menu-recur{
 
     width: 70%;
     box-sizing: border-box;
     padding: 0;
 }
 
-.menu-historia ul{
+.menu-recur ul{
 
     margin-top: 3%;
     list-style: none;
@@ -146,13 +148,13 @@ ul.menu li a{
     border: 1px white solid;
 }
 
-.menu-historia ul li{
+.menu-recur ul li{
 
     display: inline-block;
     padding: 0;
 }
 
-.menu-historia ul li a{
+.menu-recur ul li a{
 
     font-size: 1.1em;
     color: white;
@@ -169,7 +171,7 @@ ul.menu li a{
     background: none;
 }
 
-.menu-historia ul li a:hover{
+.menu-recur ul li a:hover{
    
     color: var(--back-dark);
     background-color: var(--back-light);
@@ -178,6 +180,71 @@ ul.menu li a{
     -ms-transition: all 450ms ease;
     -o-transition: all 450ms ease;
     transition: all 450ms ease;
+}
+
+.box-recur{
+    
+    margin-top: 5%;
+    border: 1px white solid;
+    background: var(--back-dark);
+    width: 85%;
+    font-family: var(--letter);
+    box-sizing: border-box;
+}
+
+.box-recur h1{
+
+    font-family: var(--title);
+    font-size: 2.6em;
+    border-bottom: 2px solid white;
+    padding: 3%;
+    width: 88%;
+}
+
+.box-recur p{
+    margin-top: 3%;
+    font-size: 1.2em;
+    width: 89%;
+    margin-bottom: 4%;
+}
+
+.box-recur a{
+
+    box-sizing: border-box;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 2%;
+    display: block;
+    text-decoration: none;
+    width: 50%;
+    border:var(--border) ;
+    color:white;
+    background: var(--back-dark);
+    -webkit-transition: all 450ms ease;
+    -moz-transition: all 450ms ease;
+    -ms-transition: all 450ms ease;
+    -o-transition: all 450ms ease;
+    transition: all 450ms ease;
+    font-family: var(--letter);
+    font-size: 1.1em;
+}   
+
+.box-recur a:hover{
+
+    color: var(--back-dark);
+    background-color: var(--back-light);
+    -webkit-transition: all 450ms ease;
+    -moz-transition: all 450ms ease;
+    -ms-transition: all 450ms ease;
+    -o-transition: all 450ms ease;
+    transition: all 450ms ease;
+}
+
+.box-recur iframe{
+
+    box-sizing: border-box;
+    padding: 2%;
+    border: white 1px solid;
 }
 
 /***********************/
@@ -210,29 +277,29 @@ ul.menu li a{
         margin: 0;
     }
     
-    .principal-hist{
+    .principal-recur{
 
         width: 90%;
     }
 
-    .principal-hist .title{
+    .principal-recur .title{
         width: 100%;
     }
 
-    .principal-hist .title h1{
+    .principal-recur .title h1{
         font-size: 3em;
         padding:6%;
     }
-    .principal-hist .title p{
+    .principal-recur .title p{
         padding:6%;
         font-size: 1.1em;
     }
 
-    .principal-hist .menu-historia{
+    .principal-recur .menu-recur{
         width: 100%;
     }
 
-    .menu-historia ul{
+    .menu-recur ul{
 
         width: 100%;
         background: none;
@@ -240,19 +307,38 @@ ul.menu li a{
         margin: 0;
     }
 
-    .menu-historia ul li{
+    .menu-recur ul li{
 
         display: block;
     }
-    .menu-historia ul li a{
+    .menu-recur ul li a{
 
         display: block;
         background: var(--back-dark);
     }
-    .menu-historia ul li a:hover{
+    .menu-recur ul li a:hover{
 
         background-color: var(--back-light);
         color: var(--back-dark);
     }
+    .box-recur{
+        padding: 5%;
+        width: 100%;
+    }
+    .box-recur h1{
+        font-size: 2em;
+    }
+    .box-recur p{
+        font-size: 1em;
+    }
+    .box-recur a{
+        width: 90%;
+        padding: 3%;
+        margin-bottom: 10%;
+    }
+    .box-recur iframe{
 
+        width: 100%;
+        height: 200px;
+    }
 }
