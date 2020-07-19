@@ -2,6 +2,7 @@
 
     /*COLORES*/
     --back-dark:rgba(26, 31, 37, 0.712);
+    --solid:rgba(26, 31, 37, 0.979);
     --back-light:rgba(255, 255, 255, 0.774);
 
     /*FUENTES*/
@@ -46,6 +47,14 @@ header{
     text-align: left;
     flex: 1;
     box-sizing: border-box;
+}
+
+#btn-menu{
+    display: none;
+}
+
+header label{
+    display: none;
 }
 
 ul.menu{
@@ -229,10 +238,42 @@ ul.sintax-links li a:hover{
 
 @media screen and (max-width:800px){
 
- 
+    #btn-menu{
+        display: none;
+    }
+    
+    header label{
+
+        display: block;
+        font-size: 25px;
+        padding: 4%;
+        border-bottom: 1px white solid;
+    }
+
+    header nav{
+        background-color: var(--solid);
+        position: absolute;
+        width: 90%;
+        border: 1px solid white;
+        box-sizing: border-box;
+        margin-left: -100%;
+    }
+
+    #btn-menu:checked 	~ nav{
+
+        margin: 2% 5% 0% 5%;
+    }
+
+    .container hr{
+
+        display: none;
+    }
+
     header nav ul.menu {
         left: 0;
         margin-left: 0;
+        flex-direction: column;
+        display: flex;
     }
 
     header nav ul.menu li{

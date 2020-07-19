@@ -3,6 +3,7 @@
     /*COLORES*/
 
     --back-dark:rgba(21, 26, 26, 0.712);
+    --solid:rgba(21, 26, 26, 0.973);
     --back-light:rgba(255, 255, 255, 0.774);
 
     /*FUENTES*/
@@ -38,7 +39,6 @@ body{
     position: relative;
     width: 100%;
     height: 100%;
-    max-width: 1600px;
     
 }   
 
@@ -53,6 +53,14 @@ header{
     text-align: left;
     flex: 1;
     box-sizing: border-box;
+}
+
+#btn-menu{
+    display: none;
+}
+
+header label{
+    display: none;
 }
 
 ul.menu{
@@ -177,67 +185,14 @@ footer p{
 /*        MOVIL        */
 /***********************/
 
-@media screen and (max-width:400px){
-
-    .principal{
-
-        width: 90%;
-        margin-top: 20%;
-        
-    }
-
-    .principal p.titulo{
-
-        margin-top: 2%;
-        font-family: var(--title);
-        font-size: calc(1.5em + 2vw);
-        margin-bottom: -1%;
-        
-    }
-
-    .principal p.subtitulo{
-
-        font-family: var(--letter);
-        font-size: calc(1em + 1vw);
-    }
-
-    .boton-clase{
-
-        margin-top: 15%;
-        text-align: center;
-        
-    }
-    .boton-clase a{
-
-        font-size: calc(1em + 1vw);
-        
-    }
-
-    header nav ul.menu {
-        left: 0;
-        margin-left: 0;
-    }
-
-    header nav ul.menu li{
-
-        margin: 0;
-        padding:2%;
-    }
-
-    header nav ul.menu li a{
-
-        margin: 0;
-        font-size:12px;
-    }
-
-    footer{
-        position: absolute;
-    }
-}
 
 
 @media screen and (max-width:800px){
 
+    .container hr{
+
+        display: none;
+    }
     .principal{
 
         width: 90%;
@@ -272,15 +227,43 @@ footer p{
         
     }
 
+    header label{
+
+        display: block;
+        font-size: 25px;
+        padding: 4%;
+        border-bottom: 1px white solid;
+    }
+
+    header nav{
+        
+        background-color:var(--solid);
+        position: absolute;
+        width: 90%;
+        border: 1px solid white;
+        box-sizing: border-box;
+        margin-left: -100%;
+        
+    }
+
+    #btn-menu:checked 	~ nav{
+
+        margin: 2% 5% 0% 5%;
+        padding: 0;
+    }
+
     header nav ul.menu {
         left: 0;
         margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        
     }
 
     header nav ul.menu li{
-
+        
+        padding: 2%;
         margin: 0;
-        padding:2%;
     }
 
     header nav ul.menu li a{
