@@ -55,13 +55,6 @@ header{
     box-sizing: border-box;
 }
 
-#btn-menu{
-    display: none;
-}
-
-header label{
-    display: none;
-}
 
 ul.menu{
 
@@ -189,17 +182,7 @@ footer p{
 
 @media screen and (max-width:800px){
 
-    .container hr{
-
-        display: none;
-    }
-    .principal{
-
-        width: 90%;
-        margin-top: 20%;
-        padding: 5%;
-    }
-
+ 
     .principal p.titulo{
 
         margin-top: 2%;
@@ -227,51 +210,14 @@ footer p{
         
     }
 
-    header label{
-
-        display: block;
-        font-size: 25px;
-        padding: 4%;
-        border-bottom: 1px white solid;
+    header{
+        background-color: var(--back-dark);
     }
 
     header nav{
         
         background-color:var(--solid);
-        position: absolute;
-        width: 90%;
-        border: 1px solid white;
-        box-sizing: border-box;
-        margin-left: -100%;
-        
     }
-
-    #btn-menu:checked 	~ nav{
-
-        margin: 2% 5% 0% 5%;
-        padding: 0;
-    }
-
-    header nav ul.menu {
-        left: 0;
-        margin-left: 0;
-        display: flex;
-        flex-direction: column;
-        
-    }
-
-    header nav ul.menu li{
-        
-        padding: 2%;
-        margin: 0;
-    }
-
-    header nav ul.menu li a{
-
-        margin: 0;
-        font-size:12px;
-    }
-
 
     footer{
 

@@ -1,0 +1,112 @@
+#btn-menu{
+    display: none;
+}
+
+header label{
+    display: none;
+}
+
+@media screen and (max-width:800px){
+
+    .container{
+
+        width: 100%;
+        margin: 0;
+    }
+
+    .container hr{
+
+        display: none;
+    }
+
+    header{
+
+        margin-top: 0;
+        position: fixed;
+        top: 0;
+    }
+
+    #btn-menu{
+        display: none;
+    }
+
+    header label{
+
+        display: block;
+        font-size: 25px;
+        padding: 4%;
+        border-bottom: 1px white solid;
+    }
+
+    header nav{
+
+        position: absolute;
+        width: 90%;
+        border: 1px solid white;
+        box-sizing: border-box;
+        margin-left: -100%;
+        -webkit-transition: all 450ms ease;
+        -moz-transition: all 450ms ease;
+        -ms-transition: all 450ms ease;
+        -o-transition: all 450ms ease;
+        transition: all 450ms ease;
+    }
+
+    #btn-menu:checked 	~ nav{
+
+        margin: 2% 5% 0% 5%;
+        -webkit-transition: all 450ms ease;
+        -moz-transition: all 450ms ease;
+        -ms-transition: all 450ms ease;
+        -o-transition: all 450ms ease;
+        transition: all 450ms ease;
+    }
+
+    header nav ul.menu {
+        left: 0;
+        margin: 5%;
+        margin-left: 0;
+        flex-direction: column;
+        display: flex;
+    }
+
+    header nav ul.menu li{
+
+        margin: 0;
+        padding:2%;
+    }
+
+    header nav ul.menu li a{
+
+        margin: 0;
+        font-size:15px;
+    }
+
+    /*****************************/
+    /*      DIVs PRINCIPAL       */
+    /*****************************/
+
+    .principal{
+
+        width: 90%;
+        margin-top: 40%;
+        padding: 5%;
+    }
+
+    .principal_c{
+        margin-top: 25%;
+        width: 100%;
+    }
+
+    .principal-intro{
+        margin-top: 25%;        
+        width: 90%; 
+        text-align: center;
+    }
+    
+    .principal-recur{
+
+        margin-top: 25%;
+        width: 90%;
+    }
+}
