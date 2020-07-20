@@ -42,50 +42,6 @@ body{
     
 }   
 
-/***********************/
-/*       HEADER        */
-/***********************/
-
-header{
-
-    width: 100%;
-    margin-top: 0;
-    text-align: left;
-    flex: 1;
-    box-sizing: border-box;
-}
-
-
-ul.menu{
-
-    margin-top: 0.75cm;
-    list-style: none;
-    
-}
-
-ul.menu li{
-    
-    display: inline;
-    padding: 1%;
-    
-}
-
-ul.menu li a{
-   
-    text-decoration: none;
-    color: white;
-    font-family: var(--letter);
-    font-size: 16px;
-    padding: 0;
-}
-
-.container hr{
-
-    margin:2%;
-    margin-top: 20px;
-    border: white 1px solid;
-
-}
 
 /***********************/
 /*   BODY PRINCIPAL    */
