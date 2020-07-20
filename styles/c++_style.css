@@ -65,6 +65,7 @@ body{
     font-family: var(--title);
     font-size: 7em; 
     margin-bottom: -1px;  
+    box-sizing: border-box;
 }
 
 .title_c p{
@@ -72,6 +73,7 @@ body{
     font-size: 1.5em;
     font-family: var(--letter);
     margin-bottom: 3%;
+    box-sizing: border-box;
 }
 
 .principal_c .c_box{
@@ -83,17 +85,13 @@ body{
 }
 
 .c_box h1{
+    box-sizing: border-box;
     font-family: var(--title);
     font-size: calc(1.5em + 1.5vw);
+    border-bottom: 2px solid white;
+    padding-bottom: 3%;
 }
 
-.c_box hr{
-
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0;
-    border: 1px white solid;
-}
 
 .c_box .cbox_cont{
 
