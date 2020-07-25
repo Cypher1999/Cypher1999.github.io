@@ -75,8 +75,11 @@ body{
 
 .boton-clase{
 
+    margin: 0;
     margin-top: 3%;
     text-align: center;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .boton-clase a{
@@ -93,6 +96,9 @@ body{
     -ms-transition: all 450ms ease;
     -o-transition: all 450ms ease;
     transition: all 450ms ease;
+    margin-bottom: 1.5%;
+    display: block;
+    margin: 0 25% 1.2% 25%;
 }
 
 .boton-clase a:hover{
@@ -108,27 +114,65 @@ body{
 
 
 /***********************/
-/*       FOOTER        */
+/*        POPUP        */
 /***********************/
 
-footer{
-
-    text-align: center;
+.overlay{
+    background: rgba(15, 19, 19, 0.884);
+    position: fixed;
+    top: 0;
+    left: 0;
     bottom: 0;
-    position: absolute;
-    width: 100%;
-    background-color: var(--back-dark);
-    z-index: 60;
-   
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: ease all;
 }
 
-footer p{
+.overlay.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s ease all;
+}
 
-    font-family: Arial;
-    font-size: 14px;
+.overlay.active .popup{
+
+    transition: 1s ease all;
+    opacity: 1;
+}
+
+.popup{
+    background-color: rgba(255, 255, 255, 0.212);
+    margin-top: 12%;
+    width: 60%;
+    border: white 3px solid;
+    padding: 2%;
+    box-sizing: border-box;
+    transition: 1s ease all;
+    opacity: 0;
+}
+
+.popup h2{
+
+    margin: 2%;
+    font-size:4em;
+
+}
+
+.popup p{
+    font-family: var(--letter);
+    margin-bottom: 4%;
+}
+
+.popup a{
     color: white;
-    
+    text-decoration: none;
+    font-size: 2.1em;
+    padding: 2%;
+    margin: 0;
+    transition: .5s;
 }
+
 
 /***********************/
 /*        MOVIL        */
@@ -143,9 +187,9 @@ footer p{
 
         margin-top: 2%;
         font-family: var(--title);
-        font-size: calc(1.5em + 2vw);
+        font-size: 2.1em;
         margin-bottom: -1%;
-        
+        padding: 3.6%;
     }
 
     .principal p.subtitulo{
@@ -156,13 +200,14 @@ footer p{
 
     .boton-clase{
 
-        margin-top: 15%;
+        margin-top: 12%;
         text-align: center;
         
     }
     .boton-clase a{
 
-        font-size: calc(1em + 1vw);
+        font-size:1em;
+        margin: 0 5% 2% 5%;
         
     }
 
@@ -175,9 +220,17 @@ footer p{
         background-color:var(--solid);
     }
 
-    footer{
 
-        display: none;
+    .popup{
+        width: 90%;
+        margin-top: 20%;
+        padding: 5%;
+        
     }
 
+    .popup p{
+        margin-bottom: 10%;
+    }
+
+    
 }

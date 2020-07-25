@@ -1,0 +1,32 @@
+.btn-up{
+    width: 95%;
+    position: fixed;
+    z-index: 99;
+    bottom: 25px;
+}
+
+.btn-up button{
+
+    border: none;
+    color: white;
+    font-size: 1em;
+    background: rgba(221, 222, 226, 0.192);
+    padding: 1% 2%;
+    border-radius: 20px;
+}
+
+.btn-up button:hover{
+    color: rgba(17, 17, 17, 0.795);
+    background-color: rgba(255, 255, 255, 0.651);
+    transition: 0.5s ease all;
+}
+
+@media (max-width:800px){
+
+    .btn-up{
+       
+        display: none;
+    }
+
+
+}

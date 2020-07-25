@@ -55,31 +55,44 @@
 
         </div>
 
-       <div class="boton-clase">
+       <div class="boton-clase" align=center>
 
-            <a href="pages/introduccion.html">Ve a tu primera clase</a>
+            <a href="pages/introduccion.html">Ve tu primera clase</a>
+            
+            <a href="#" id="open-pop">Información</a>
+       </div>
+
+       <div class="overlay" id="overlay">
+
+            <div class="popup" >
+                
+                <h2><i class="fas fa-exclamation-circle"></i></h2>
+                <p>
+                    <b>
+                        Esta no es una página oficial de la Ucla. 
+                        Esta página recopila el contenido de la 
+                        asignatura de Introducción a la Computación y
+                        de otras fuentes para facilitar su acceso y ayudar al
+                        estudiante en su proceso de aprender.
+
+                    </b>
+                </p>
+                <a href="#" id="close-pop"><i class="fas fa-times"></i></a>
+            </div>
 
        </div>
 
-    
-       
+
     </div>
 
-    <footer >
-
-        <p>Esta página tiene como fin facilitar el material
-            de estudio para los nuevos estudiantes y de ninguna
-            forma reemplaza los medios online oficiales de la ucla
-            o las clases presenciales.
-        </p>
-
-    </footer>
+    
 
     <!--PARTICLES-->
 
     <script src="js/particles.min.js"></script>
     <script src="js/app.js"></script>
-    
+    <script src="js/popup.js"></script>
+
 </body>
 
 </html>
