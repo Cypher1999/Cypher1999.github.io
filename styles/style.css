@@ -28,7 +28,7 @@ body{
     background-size:cover;
     background-repeat: no-repeat;
     background-position:top center ;
-   
+    margin-bottom: 40px;
 }
 
 
@@ -39,7 +39,8 @@ body{
     position: relative;
     width: 100%;
     height: 100%;
-    
+    padding: 0;
+    margin: 0;
 }   
 
 
@@ -175,9 +176,58 @@ body{
 
 
 /***********************/
-/*        MOVIL        */
+/*       FOOTER        */
 /***********************/
 
+footer{
+    bottom: 0px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    background-color: var(--back-dark);
+    font-size: .9em;
+    font-family: var(--letter);
+    position: fixed;
+    z-index: 99;
+    box-sizing: border-box;
+    color: white;
+}
+
+footer .name-footer{
+    width: 38%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.name-footer p{
+    margin-left: 1%;
+}
+
+footer .menu-footer{
+    width: 58%;
+    float: right;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+footer .menu-footer ul{
+    list-style: none;
+}
+
+.menu-footer ul li{
+    padding-right:3% ;
+    display: inline;
+}
+
+.menu-footer ul li a{
+    color: white;
+}
+
+
+/***********************/
+/*        MOVIL        */
+/***********************/
 
 
 @media screen and (max-width:800px){
