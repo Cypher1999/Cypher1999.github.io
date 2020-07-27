@@ -28,7 +28,7 @@ body{
     background-size:cover;
     background-repeat: no-repeat;
     background-position:top center ;
-    margin-bottom: 40px;
+   
 }
 
 
@@ -113,21 +113,22 @@ body{
     transition: all 450ms ease;
 }
 
-
 /***********************/
-/*        POPUP        */
+/*       POPUPS        */
 /***********************/
 
 .overlay{
+
     background: rgba(15, 19, 19, 0.884);
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
+    box-sizing: border-box;
     visibility: hidden;
     opacity: 0;
-    transition: ease all;
+    transition: 1s ease all;
 }
 
 .overlay.active{
@@ -136,94 +137,96 @@ body{
     transition: 1s ease all;
 }
 
-.overlay.active .popup{
-
-    transition: 1s ease all;
-    opacity: 1;
-}
-
 .popup{
     background-color: rgba(255, 255, 255, 0.212);
-    margin-top: 12%;
+    margin-top: 8%;
     width: 60%;
     border: white 3px solid;
     padding: 2%;
     box-sizing: border-box;
-    transition: 1s ease all;
+    visibility: hidden;
     opacity: 0;
 }
 
+.popup.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s ease all;
+}
+
+#popInfo{
+    margin-top: 12%;
+}
+
+#popApo{
+    margin-top: 12%;
+}
+
 .popup h2{
-
-    margin: 2%;
-    font-size:4em;
-
+    font-size: 4em;
+    margin: 0;
+    margin-top: 0%;
 }
 
 .popup p{
+
     font-family: var(--letter);
-    margin-bottom: 4%;
+    font-size: 1em;
 }
 
-.popup a{
-    color: white;
-    text-decoration: none;
-    font-size: 2.1em;
-    padding: 2%;
-    margin: 0;
-    transition: .5s;
+.popup ul{
+    list-style: none;
+    padding: 0;
 }
 
+.popup ul li{
+
+    font-family: var(--letter);
+}
 
 /***********************/
 /*       FOOTER        */
 /***********************/
 
-footer{
-    bottom: 0px;
-    width: 100%;
+.footer{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     display: block;
-    background-color: var(--back-dark);
-    font-size: .9em;
+    width: 100%;
+    border-top: 1px solid white;
+    margin-top: 7%;
     font-family: var(--letter);
+    font-size: 0.9em;
+    padding-top: 0.5%;
+    bottom: 0;
     position: fixed;
-    z-index: 99;
-    box-sizing: border-box;
-    color: white;
+    background-color: var(--back-dark);
 }
 
-footer .name-footer{
-    width: 38%;
+.footer .name-footer{
     float: left;
-    box-sizing: border-box;
+    width: 30%;
+    display: block;
 }
 
-.name-footer p{
-    margin-left: 1%;
-}
-
-footer .menu-footer{
-    width: 58%;
+.footer .menu-footer{
     float: right;
-    box-sizing: border-box;
-    text-align: right;
+    width: 40%;
+    margin: 0;
 }
 
-footer .menu-footer ul{
-    list-style: none;
+.footer .menu-footer ul{
+    list-style:none;
 }
-
-.menu-footer ul li{
-    padding-right:3% ;
+.footer .menu-footer ul li{
     display: inline;
+    padding: 0% 2%;
 }
 
-.menu-footer ul li a{
+.footer .menu-footer ul li a{
     color: white;
 }
-
 
 /***********************/
 /*        MOVIL        */
@@ -273,14 +276,39 @@ footer .menu-footer ul{
 
     .popup{
         width: 90%;
-        margin-top: 20%;
+        margin-top: 30%;
         padding: 5%;
-        
     }
 
     .popup p{
         margin-bottom: 10%;
     }
 
+    .footer{
+        font-size: 0.8em;
+    }
+
+    .footer .name-footer{
+        float: none;
+        width: 100%;
+    }
+
+    .footer .menu-footer{
+        float: none;
+        width: 100%;
+        margin:0;
+        margin-left:-10% ;
+    }
     
+    /***********************/
+    /* Pantalla Horizontal */
+    /***********************/
+
+    @media all and (orientation: landscape){
+      
+        .boton-clase{
+            margin-bottom: 15%;
+        }
+    }
+
 }
