@@ -290,6 +290,15 @@ body{
         margin-bottom: 10%;
     }
 
+    #popInfo{
+        margin-top: 25%;
+    }
+    
+    #popApo{
+        margin-top: 25%;
+    }
+    
+
     .footer{
         font-size: 0.8em;
     }
@@ -316,5 +325,6 @@ body{
             margin-bottom: 15%;
         }
     }
+
 
 }
