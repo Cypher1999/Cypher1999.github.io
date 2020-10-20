@@ -8,11 +8,9 @@ de la Ucla DCyT.
 
 HERRAMIENTAS: 
 
-    -Visual Estudio Code.
     -El hosting Frontend de Github Pages.
     -Para las particulas:https://vincentgarreau.com/particles.js/.
     -Pixabay.com y Pexels.com para las imágenes.
-    -Git.
 
 PROPÓSITO:
 
